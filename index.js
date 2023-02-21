@@ -5,7 +5,7 @@ app.all('/', (req, res) => {
     res.send('Yoooo!')
 })
 app.listen(process.env.PORT || 3000)
-app.post('/api', (request, response) => {
+app.get('/api', (request, response) => {
 	console.log(request.body);
 	response.json({
 		status: 'success',
