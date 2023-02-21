@@ -8,7 +8,7 @@ app.post('/api', (request, response) => {
 	console.log(request.body);
 	response.json({
 		status: 'success',
-		latitude: "12",
-		longitude: "13"
+		latitude: request.body.lat,
+		longitude: request.body.lon
 	});
 });
