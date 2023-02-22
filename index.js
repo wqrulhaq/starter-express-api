@@ -24,11 +24,4 @@ app.post('/api', (request, response) => {
 
 });
 
-app.get('/api',(request, response) => {
-
-	// get an item at key "leo" from collection animals
-	let item = await animals.get("leo")
-	console.log(item)
-});
-
 
