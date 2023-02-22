@@ -2,8 +2,7 @@
 const express = require('express');
 const app= express();
 
-const CyclicDb = require("@cyclic.sh/dynamodb")
-const db = CyclicDb("sore-plum-beetle-tieCyclicDB")
+const db = require("@cyclic.sh/dynamodb")
 
 const animals = db.collection("animals")
 app.listen(process.env.PORT || 3000)
